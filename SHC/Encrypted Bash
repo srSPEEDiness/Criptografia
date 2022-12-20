@@ -1,0 +1,105 @@
+# Encrypted Bash
+
+
+echo '#!/bin/bash' > arquivo.sh
+
+cat arquivo.sh (verifica)
+
+echo "echo '$(base64 exemplo)' | base64 -d | sh" >> arquivo.sh
+
+Executar
+
+chmod +x arquivo.sh
+
+./arquivo.sh
+
+
+# Faça download do arquivo
+
+wget -q http://www.datsi.fi.upm.es/~frosal/sources/shc-3.8.9.tgz
+tar zxvf shc-3.8.9.tgz
+cd shc-3.8.9
+make
+
+http://www.datsi.fi.upm.es/~frosal/
+
+Descompacte o arquivo, entre no diretório de download e execute:
+
+ tar -xzvf shc-3.8.9.tgz
+
+Entre no novo diretório com os arquivos e execute:
+
+ make test
+
+Logo após:
+
+ make
+
+Obs.: em caso de erro, ignore. Para mim deu erro, mas funcionou.
+
+Será criado um arquivo shc. Se tiver, o arquivo está correto.
+
+ENCRIPTANDO SEU SHELL SCRIPT
+Com isso, a sintaxe é básica:
+
+ ./shc -f seu_script.sh
+
+Obs.: a única opção obrigatória é o -f, caso queira, pode colocar o binário shc criado no seu PATH. Daí, não é necessário o ./ na frente.
+
+Com isso, será criado um arquivo com o mesmo nome, mais .x: seu_script.sh.x = binário
+
+E um outro arquivo com o mesmo nome, mais x.c, com o fonte em C: seu_script.sh.x.c = fonte em C
+
+Outras opções válidas:
+-e :: a data de vencimento no formato dd/mm /aaaaa. Ou seja, validade para que o script seja executado, se passar dessa data, uma mensagem será exiba: "Por favor, contacte o seu fornecedor".
+-m :: mensagem a ser exibida após a expiração. Você informa qual a mensagem que será exibida quando expirar a data (usada no -e).
+-f :: nome do script do arquivo para compilar.
+-v :: verbose.
+-T :: compatibilidade para usar o strace, ptrace, truss, etc.
+-r :: relaxe a segurança. Faça um binário redistribuível que executa em sistemas diferentes executando o mesmo sistema de pacote ( :-D ).
+-h :: ajuda.
+
+EXECUTANDO
+Após criar o binário, você pode executar das seguintes formas:
+
+ ./seu_script.sh.x
+Ou
+$ bash -c seu_script.sh.x
+
+Ou ainda, colocar no seu PATH e executar:
+
+ seu_script.sh.x
+
+ENCRIPTANDO ARQUIVO DE TEXTO
+Dica rápida para criptografar um arquivo de texto, você pode fazer da seguinte forma, usando o Vim (vi):
+
+Opção: -x
+
+ vim -x senhas_bla.txt
+
+Processo:
+Irá pedir a "palavra passe" duas vezes, digite a mesma;
+Edite o arquivo e saia (não precisa editar, mas é necessário sair SALVANDO);
+Após isso, ele já está "criptografado";
+Se tentar editar com o Vim (vi), será solicitado a senha;
+Se der um cat no arquivo, irá aparecer criptografado.
+
+
+
+
+DESCRIPTOGRAFANDO 
+
+# EXECUTE
+
+wget -O unshc https://raw.githubusercontent.com/yanncam/UnSHc/master/latest/unshc.sh
+
+# DE PERMISSÃO 
+
+chmod +x unshc
+./unshc -h
+
+# DECRYPT
+
+arquivo_crypted.sh.x >> arquivo_decrypted.sh
+
+./unshc.sh arquivo_crypted.sh.x -o arquivo_decrypted.sh
