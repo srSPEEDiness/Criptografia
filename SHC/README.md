@@ -14,6 +14,9 @@ Todos os outros "problemas de descriptografia de arquivos" serão fechados diret
 SHc (compilador SHell) é uma ferramenta fabulosa criada e mantida por Francisco Javier Rosales Garcia (http://www.datsi.fi.upm.es/~frosal/). Essa ferramenta protege qualquer shell script com criptografia (ARC4).
 
 wget -q http://www.datsi.fi.upm.es/~frosal/sources/shc-3.8.9.tgz
+OU
+wget -q https://github.com/srSPEEDiness/Criptografia/blob/main/SHC/shc-3.8.9b.tgz
+
 tar zxvf shc-3.8.9.tgz
 cd shc-3.8.9
 make

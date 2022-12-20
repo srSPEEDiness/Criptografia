@@ -17,6 +17,12 @@ chmod +x arquivo.sh
 # Faça download do arquivo
 
 wget -q http://www.datsi.fi.upm.es/~frosal/sources/shc-3.8.9.tgz
+
+ou 
+
+wget -q https://github.com/srSPEEDiness/Criptografia/blob/main/SHC/shc-3.8.9b.tgz
+
+
 tar zxvf shc-3.8.9.tgz
 cd shc-3.8.9
 make
@@ -91,7 +97,7 @@ DESCRIPTOGRAFANDO
 
 # EXECUTE
 
-wget -O unshc https://raw.githubusercontent.com/yanncam/UnSHc/master/latest/unshc.sh
+wget -O unshc https://raw.githubusercontent.com/srSPEEDiness/Criptografia/main/latest/unshc.sh
 
 # DE PERMISSÃO 
 
