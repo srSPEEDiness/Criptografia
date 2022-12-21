@@ -19,7 +19,7 @@ OU
 
 wget -q https://github.com/srSPEEDiness/Criptografia/raw/main/SHC/shc-3.8.9.tgz
 
-tar zxvf shc-3.8.9.tgz
+tar zxvf shc-3.8.9b.tgz
 cd shc-3.8.9
 make test
 make
