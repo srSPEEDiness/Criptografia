@@ -10,6 +10,15 @@
             "sslPort": "443",
             "CloudFrontIP": "",
             "AzionIP": ""
+        },
+        {
+            "Name": "SOMENTE TIM DIRECT",
+            "FLAG": "BR",
+            "ServerIP": "apptest.c6bank.app",
+            "ServerPort": "80",
+            "sslPort": "443",
+            "CloudFrontIP": "",
+            "AzionIP": ""
         }
     ],
     "NetworksPremium": [
