@@ -1,0 +1,281 @@
+{
+    "Version": "1.0.1",
+    "ReleaseNotes": "⚠️ ATENÇÃO NOVA ATUALIZAÇÃO ⚠️ \n \n Clique em ATUALIZAR para receber \n \n 🔄 UPDATE Versão 1.0.0 02/01/23 \n",
+    "Premium": [
+        {
+            "Name": "PREMIUM BR",
+            "FLAG": "BR",
+            "ServerIP": "speedcellpremium.ga",
+            "ServerPort": "80",
+            "sslPort": "443",
+            "CloudFrontIP": "",
+            "AzionIP": ""
+        }
+    ],
+    "NetworksPremium": [
+        {
+            "Name": "TIM DIRECT GITLAB [1]",
+            "Payload": "GET / HTTP/1.1[crlf]Host: gitlab.com[crlf]Expect: 100-continue[crlf][crlf][split][crlf][crlf]ACL /?/ HTTP/1.1[crlf]Host: speedcellpremium.ga[crlf]Expect: 100-continue[crlf]Upgrade: websocket[crlf]User-Agent: Googlebot/2.1 (+http://www.google.com/bot.html)[crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "104.16.53.111",
+            "ProxyIP": "",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "TIM DIRECT BANK [2]",
+            "Payload": "GET / HTTP/1.1[crlf]Host: www.c6bank.app[crlf]Expect: 100-continue[crlf][crlf][split][crlf][crlf]ACL /?/ HTTP/1.1[crlf]Host: speedcellpremium.ga[crlf]Expect: 100-continue[crlf]Upgrade: websocket[crlf]User-Agent: Googlebot/2.1 (+http://www.google.com/bot.html)[crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "104.19.241.25",
+            "ProxyIP": "",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "TIM DIRECT SANDBOX [3]",
+            "Payload": "GET / HTTP/1.1[crlf]Host: api.sandbox.c6bank.com.br[crlf]Expect: 100-continue[crlf][crlf][split][crlf][crlf]ACL /?/ HTTP/1.1[crlf]Host: speedcellpremium.ga[crlf]Expect: 100-continue[crlf]Upgrade: websocket[crlf]User-Agent: Googlebot/2.1 (+http://www.google.com/bot.html)[crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "104.19.239.25",
+            "ProxyIP": "",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "TIM EXPIRADO I [4]",
+            "Payload": "MERGE mobile.adobe.com HTTP/1.1[crlf]Host: mobile.adobe.com [crlf]Connection: upgrade, Keep-Alive[crlf]Upgrade: HTTP/2.0[crlf]User-Agent: Googlebot/2.1 (+ http://www.google.com/bot.html)[crlf]Referenciador : http://www.google.com [crlf]",
+            "Sni": "",
+            "Tlsip": "mobile.adobe.com",
+            "ProxyIP": "speedcellpremium.ga",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "0"
+        },
+        {
+            "Name": "TIM EXPIRADO II [5]",
+            "Payload": "MERGE buzzfeed.com HTTP/1.1[crlf]Host: buzzfeed.com [crlf]Connection: upgrade, Keep-Alive[crlf]Upgrade: HTTP/2.0[crlf]User-Agent: Googlebot/2.1 (+ http://www.google.com/bot.html)[crlf]Referenciador : http://www.google.com [crlf]",
+            "Sni": "",
+            "Tlsip": "buzzfeed.com",
+            "ProxyIP": "speedcellpremium.ga",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "0"
+        },
+        {
+            "Name": "TIM EXPIRADO III [6]",
+            "Payload": "MERGE campaign.adobe.com HTTP/1.1[crlf]Host: campaign.adobe.com [crlf]Connection: upgrade, Keep-Alive[crlf]Upgrade: HTTP/2.0[crlf]User-Agent: Googlebot/2.1 (+ http://www.google.com/bot.html)[crlf]Referenciador : http://www.google.com [crlf]",
+            "Sni": "",
+            "Tlsip": "campaign.adobe.com",
+            "ProxyIP": "speedcellpremium.ga",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "0"
+        },
+        {
+            "Name": "TIM WSPAY [7]",
+            "Payload": "CLOUD wss://gitlab.com// HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]",
+            "Sni": "gitlab.com",
+            "Tlsip": "172.65.251.78",
+            "ProxyIP": "",
+            "ProxyPort": "433",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "4"
+        },
+        {
+            "Name": "TIM WSPAY [8]",
+            "Payload": "GET wss://pre-onboarding-p.c6bank.app HTTP/1.1[crlf]Host: SBR_HOST[crlf]Origin: https://www.google.com, http://www.google.com[crlf]User-Agent: Googlebot/2.1 (+http://www.google.com/bot.html)[crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive, Upgrade[crlf][crlf]",
+            "Sni": "pre-onboarding-p.c6bank.app",
+            "Tlsip": "pre-onboarding-p.c6bank.app",
+            "ProxyIP": "pre-onboarding-p.c6bank.app",
+            "ProxyPort": "433",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "4"
+        },
+        {
+            "Name": "TIM WSPAY [9]",
+            "Payload": "GET wss://gitlab.com HTTP/1.1[crlf]Host: SBR_HOST[crlf]Origin: https://www.google.com, http://www.google.com[crlf]User-Agent: Googlebot/2.1 (+http://www.google.com/bot.html)[crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive, Upgrade[crlf][crlf]",
+            "Sni": "gitlab.com",
+            "Tlsip": "gitlab.com",
+            "ProxyIP": "gitlab.com",
+            "ProxyPort": "433",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "4"
+        },
+        {
+            "Name": "TIM WSPAY [10]",
+            "Payload": "GET sni://mobile.c6bank.app HTTP/1.1[crlf]Host: SBR_HOST[crlf]Connection: Upgrade[crlf]Upgrade: Websocket[crlf][crlf]",
+            "Sni": "mobile.c6bank.app",
+            "Tlsip": "mobile.c6bank.app",
+            "ProxyIP": "mobile.c6bank.app",
+            "ProxyPort": "433",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "4"
+        },
+        {
+            "Name": "TIM WSPAY [11]",
+            "Payload": "GET sni://workplaceservices.surveymonkey.com HTTP/1.1[crlf]Host: SBR_HOST[crlf]Connection: Upgrade[crlf]Upgrade: Websocket[crlf][crlf]",
+            "Sni": "workplaceservices.surveymonkey.com",
+            "Tlsip": "workplaceservices.surveymonkey.com",
+            "ProxyIP": "workplaceservices.surveymonkey.com",
+            "ProxyPort": "433",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "4"
+        },
+        {
+            "Name": "TIM DIRECT [12]",
+            "Payload": "ACL HTTP/2[crlf]Host: plus.google.com[crlf]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "[app_host]",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "TIM DIRECT [13]",
+            "Payload": "HTTP/ [crlf][crlf]|[crlf]]]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "[app_host]",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "TIM DIRECT [14]",
+            "Payload": "ACL HTTP/1.1[lf]Host: google.es[lf]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "[app_host]",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "TIM PROXY [15]",
+            "Payload": "PATCH HTTP/1.0 [crlf]Host:[rotation_method=ACL;BASELINE-CONTROL; BCOPY; BDELETE; BIND; BMOVE; BPROPATCH; BPROPFIND; BPROPPATCH; CHECKIN; CHECKOUT; CONNECT; CONNECTPATCH; COPY; DELETE; GET; HEAD; LABEL; LINK; LOCK; MERGE; MERGER; MKACTIVITY; MKCALENDAR; MKCOL; MKREDIRECTREF; MKWORKSPACE; MOVE; NOTIFY; OPTION; OPTIONS; ORDERPATCH; PATCH; POLL; POST; PRI; PROPATCH; PROPFIND; PROPPATCH; PURGE; PUT; REBIND; REPORT; REPORT; SEARCH; SEARCH; SUBSCRIBE; TRACE; UNBIND; UNCHECKOUT; UNLINK; UNLOCK; UNSUBSCRIBE; UPDATE; UPDATEREDIRECTR..; VERSION-CONTROL PAYLOAD; WEBDA; WEBDAV; X-MS-ENUMATTS][crlf]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "[app_host]",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "0"
+        },
+        {
+            "Name": "VIVO PROXY [1]",
+            "Payload": "GET / HTTP/1.1[crlf]Host: SBR_HOST[crlf]Upgrade: Websocket[crlf]Connection: Upgrade[crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "104.16.51.111",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "VIVO PROXY [2]",
+            "Payload": "GET / HTTP/1.1[crlf]Host: SBR_HOST[crlf]Upgrade: Websocket[crlf]Connection: Upgrade[crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "104.16.53.111",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "VIVO FRONT [3]",
+            "Payload": "GET / HTTP/1.1[crlf]Host: SBR_FRONT[crlf]Connection: Upgrade[crlf]Upgrade: Websocket[crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "recarga.vivo.com.br",
+            "ProxyPort": "80",
+            "CloudFront": "recarga.vivo.com.br",
+            "CloudAZ": "",
+            "tunnelType": "0"
+        },
+        {
+            "Name": "VIVO FRONT [4]",
+            "Payload": "GET / HTTP/1.1[crlf]Host: SBR_FRONT[crlf]Connection: Upgrade[crlf]Upgrade: Websocket[crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "13.227.126.65",
+            "ProxyPort": "80",
+            "CloudFront": "13.227.126.65",
+            "CloudAZ": "",
+            "tunnelType": "0"
+        },
+        {
+            "Name": "VIVO EASY [6]",
+            "Payload": "GET / HTTP/1.1[crlf]Host: SBR_HOST[crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "104.18.7.80",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "CLARO DIRECT [1]",
+            "Payload": "POST HTTP/1.1[crlf]Host:www.waze.com[crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "209.14.70.117",
+            "ProxyIP": "",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "CLARO DIRECT [2]",
+            "Payload": "GET http://www.claro.com.br HTTP/1.0[crlf]Host: http://www.claro.com.br[crlf]Connection: keep-alive[crlf]User-Agent: Upgrade [crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "[app_host]",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "2"
+        },
+        {
+            "Name": "CLARO PROXY [3]",
+            "Payload": "POST HTTP/1.1[crlf]Host:www.waze.com[crlf][crlf]",
+            "Sni": "",
+            "Tlsip": "",
+            "ProxyIP": "209.14.70.117",
+            "ProxyPort": "80",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "0"
+        },
+        {
+            "Name": "OI WSPAY [1]",
+            "Payload": "GET wss://www.hbogo.com.br HTTP/1.1[crlf]Host: SBR_HOST[crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
+            "Sni": "www.hbogo.com.br",
+            "Tlsip": "www.hbogo.com.br",
+            "ProxyIP": "www.hbogo.com.br",
+            "ProxyPort": "433",
+            "CloudFront": "",
+            "CloudAZ": "",
+            "tunnelType": "4"
+        }
+    ]
+}
